@@ -2,7 +2,7 @@ import { DataSourceEntry } from "@/types/section.types";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { User } from "lucide-react";
 
-interface DataSourceListProps {
+type DataSourceListProps = {
   entries: DataSourceEntry[];
 }
 
