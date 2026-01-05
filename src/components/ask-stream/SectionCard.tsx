@@ -22,7 +22,7 @@ export function SectionCard({
   return (
     <div 
       className={cn(
-        "relative rounded-lg p-6 shadow-sm",
+        "relative rounded-lg py-6 pl-6 pr-8 shadow-sm",
         isPurple 
           ? "bg-linear-to-br from-[#E9E4F0] to-[#D4C5E8]" 
           : "border bg-white"
@@ -32,29 +32,29 @@ export function SectionCard({
       
       <div className="relative">
         <h3 className={cn(
-          "mb-4 text-sm font-semibold",
+          "mb-10 text-2xl font-semibold leading-8 tracking-[-0.25px]",
           isPurple ? "text-gray-900" : "text-foreground"
-        )}>
+        )} style={{ fontFamily: "Bricolage Grotesque" }}>
           {title}
         </h3>
         
         <h4 className={cn(
-          "mb-4 text-base font-semibold leading-tight",
+          "mb-4 text-[20px] font-medium leading-7 tracking-[-0.25px]",
           isPurple ? "text-gray-900" : "text-foreground"
-        )}>
+        )} style={{fontFamily: "Inter"}}>
           {heading}
         </h4>
         
         <p className={cn(
-          "text-sm leading-relaxed",
+          "text-[16px] font-normal leading-6 tracking-[0px]",
           isPurple ? "text-gray-700" : "text-muted-foreground"
-        )}>
+        )} style={{fontFamily: "Inter"}}>
           {content}
         </p>
         
         {chip && (
           <div className="mt-4 inline-flex">
-            <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+            <span className="rounded-full bg-primary/10 px-4 py-1 text-xs font-medium text-primary">
               {chip}
             </span>
           </div>

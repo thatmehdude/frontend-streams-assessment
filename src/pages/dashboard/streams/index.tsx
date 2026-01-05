@@ -3,15 +3,16 @@ import { SectionCard } from "@/components/ask-stream/SectionCard";
 import { DataSourceList } from "@/components/ask-stream/DataSourceList";
 import { askStreamData } from "@/data/askStream";
 import { AskStreamHeader } from "@/components/ask-stream/AskStreamHeader";
+import { Separator } from "@/components/ui/separator";
 
 export default function Streams() {
   return (
     <Layout>
       <div className="mx-auto max-w-7xl">
         <AskStreamHeader />
-
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-          <div className="space-y-6 lg:col-span-2">
+        <Separator />
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 py-10">
+          <div className="space-y-6 lg:col-span-1">
             <SectionCard
               title={askStreamData.section1.title}
               heading={askStreamData.section1.heading}
