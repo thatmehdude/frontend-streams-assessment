@@ -8,7 +8,7 @@ type DataSourceListProps = {
 
 export function DataSourceList({ entries }: DataSourceListProps) {
   return (
-    <div className="rounded-lg border bg-white p-4 shadow-sm">
+    <div className="border bg-white p-4 shadow-sm">
       <div className="mb-4 flex items-center justify-between">
         <h3 className="text-sm font-medium text-muted-foreground">Data Source</h3>
         <button className="text-sm font-medium text-foreground">

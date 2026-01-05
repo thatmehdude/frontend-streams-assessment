@@ -22,9 +22,9 @@ export function SectionCard({
   return (
     <div 
       className={cn(
-        "relative rounded-lg py-6 pl-6 pr-8 shadow-sm",
+        "relative py-6 pl-6 pr-8 shadow-sm",
         isPurple 
-          ? "bg-linear-to-br from-[#E9E4F0] to-[#D4C5E8]" 
+          ? "bg-linear-to-br from-[#E9E4F0] to-[#D4C5E8] rounded-lg" 
           : "border bg-white"
       )}
       style={style}
