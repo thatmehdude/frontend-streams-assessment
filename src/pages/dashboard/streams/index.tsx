@@ -60,7 +60,7 @@ export default function Streams() {
             />
 
             <div 
-              className="relative cursor-pointer"
+              className="relative cursor-pointer p-4 border-r-2 border-t-2 pt-12"
               onClick={() => setShowCardStack(true)}
             >
               <SectionCard
@@ -69,7 +69,7 @@ export default function Streams() {
                 content={askStreamData.section2[0].content}
                 variant="purple"
               />
-              {/* Stack effect preview */}
+
               <div className="pointer-events-none absolute inset-0 -z-10 translate-y-2 scale-95 opacity-50">
                 <SectionCard
                   title={askStreamData.section2[1]?.title || ""}
@@ -99,7 +99,6 @@ export default function Streams() {
         </div>
       </div>
 
-      {/* Card Stack Modal */}
       {showCardStack && (
         <CardStack
           cards={askStreamData.section2}
