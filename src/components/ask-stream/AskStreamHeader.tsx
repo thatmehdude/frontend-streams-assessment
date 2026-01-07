@@ -2,8 +2,8 @@ import AppButton from "@/components/ui/app-button";
 
 export function AskStreamHeader() {
   return (
-    <div className="mb-8 gap-11 py-20">
-      <div className="mb-6">
+    <div className="mb-8 flex flex-col items-center gap-11 py-20">
+      <div className="mb-6 w-full max-w-2xl">
         <h1
           className="mb-2 text-[57px] font-semibold leading-16 tracking-[-0.25px]"
           style={{ fontFamily: "Bricolage Grotesque" }}
@@ -19,7 +19,7 @@ export function AskStreamHeader() {
         </p>
       </div>
 
-      <div className="relative border-2 rounded-lg">
+      <div className="relative w-full max-w-2xl border-2 rounded-lg">
         <input
           type="text"
           placeholder="Ask anything"
@@ -27,8 +27,8 @@ export function AskStreamHeader() {
         />
 
         <div className="mt-2 flex items-center justify-between px-4 pb-2">
-          <div className=" flex gap-1 items-center">
-            <span className="rounded-full bg-primary/10 px-1  py-1 text-xs font-medium text-primary font-12">+ Beta</span>
+          <div className="flex gap-1 items-center">
+            <span className="rounded-full bg-primary/10 px-1 py-1 text-xs font-medium text-primary font-12">+ Beta</span>
             <span className="text-xs text-muted-foreground">
               Conversational Analytics
             </span>

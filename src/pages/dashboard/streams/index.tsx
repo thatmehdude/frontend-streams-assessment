@@ -12,7 +12,7 @@ export default function Streams() {
 
   return (
     <Layout>
-      <div className="mx-auto max-w-7xl">
+      <div className="max-w-7xl">
         <AskStreamHeader />
         <Separator className="my-8" />
         
