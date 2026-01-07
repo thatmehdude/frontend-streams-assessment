@@ -11,22 +11,29 @@ export function AskStreamHeader() {
           <span className="text-primary">Ask</span>{" "}
           <span className="text-foreground">Stream</span>
         </h1>
-        <p className="mb-2 text-[57px] font-semibold leading-16 tracking-[-0.25px]" style={{ color: '#CAC4D0' }}>lorem ipsum</p>
+        <p
+          className="mb-2 text-[57px] font-semibold leading-16 tracking-[-0.25px]"
+          style={{ color: "#CAC4D0" }}
+        >
+          lorem ipsum
+        </p>
       </div>
 
-      <div className="relative">
+      <div className="relative border-2 rounded-lg">
         <input
           type="text"
           placeholder="Ask anything"
-          className="w-full rounded-lg border bg-white px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+          className="w-full rounded-lg bg-white px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
         />
 
-        <div className="mt-2 flex items-center justify-between">
-          <span className="text-xs text-primary">+ Beta</span>
-          <span className="text-xs text-muted-foreground">
-            Conversational Analytics
-          </span>
-          <AppButton size="sm" className="ml-auto">
+        <div className="mt-2 flex items-center justify-between px-4 pb-2">
+          <div className=" flex gap-1 items-center">
+            <span className="rounded-full bg-primary/10 px-1  py-1 text-xs font-medium text-primary font-12">+ Beta</span>
+            <span className="text-xs text-muted-foreground">
+              Conversational Analytics
+            </span>
+          </div>
+          <AppButton size="sm" className="bg-[#3C42571F]" style={{ color: "#CAC4D0" }}>
             Analyze
           </AppButton>
         </div>
